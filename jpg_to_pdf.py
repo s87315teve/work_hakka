@@ -40,7 +40,7 @@ def makePdf(jpgFileName):
     pdf.add_page()
     pdf.image(jpgFileName, 0, 0)
     path=os.path.abspath('.')
-    pdfFilenName=jpgFileName.replace(path,path+'/tempFile')
+    pdfFilenName=jpgFileName
     pdfFilenName=pdfFilenName.replace('.jpg','.pdf')
     pdf.output(pdfFilenName, "F")
 '''
